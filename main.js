@@ -359,9 +359,68 @@
 
 // 21. What is an event loop and call stack ?
 //Ans :- 
+//  the JavaScript event loop's task is to maintain the stack and handle the execution of code. The event loop checks the call stack and if the call stack is empty, it then looks to the queue. If there is anything in the queue, the event loop takes the first task and pushes it to the stack to run.
+
+// 22. What are promises and why do we need them?
+// Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+
+// 23. What is promise chaining ?
+// Promise chaining: Promise chaining is a syntax that allows you to chain together multiple asynchronous tasks in a specific order.
+
+// 24. What are pure functions?
+// A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed
+
+
+// 25. What is hoisting?
+// Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution
+
+// 26. What is a Temporal Dead Zone?
+// Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed. 
+
+
+// 27.What is the DOM?
+// The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.
+
+// 28. Explain passed by value and passed by reference
+// Ans:- Passed by value is used in Primitive data types and passed by reference is used in non primitive data types
+
+// 29. Write code to explain map and filter in arrays ?
+// Ans:-
+// let arr = [1,2,3,4,5,6,7,8,9,10].map( (item)=> {
+//     return item + 1
+// }).filter( (item)=> {
+//     if(item < 7) {
+//         return item
+//     }
+// })
+// console.log(arr);
+
+//29. Give an example of async/await
+// const p = new Promise( (resolve, reject)=> {
+//     setTimeout( ()=> {
+//         resolve("Got the data")
+//     }, 3000)
+// }).then( (res)=> {
+//     return res + "OK"
+// }).catch( (err)=> {
+//     console.log(err);
+// })
 
 
 
+// const asy = async ()=> {
+//     console.log("Started")
+//     let a =  await p
+//     console.log(a);
+//     console.log("Code is Complited");
+// }
+
+// asy()
+
+
+
+
+// **Day6 Qus Solved in indexedDB.html page****
 
 
 
